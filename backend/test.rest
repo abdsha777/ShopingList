@@ -1,0 +1,33 @@
+
+GET http://127.0.0.1:8000/api/
+Content-Type: application/json
+
+{}
+
+###
+
+POST http://127.0.0.1:8000/api/
+Content-Type: application/json
+
+{"name":"eggs","quantity":"2 dozen"}
+
+###
+
+GET  http://127.0.0.1:8000/api/4
+Content-Type: application/json
+
+{}
+
+###
+PUT  http://127.0.0.1:8000/api/3/update/
+Content-Type: application/json
+
+{"name": "momos","quantity": "4 packs"}
+
+###
+DELETE  http://127.0.0.1:8000/api/4/delete/
+Content-Type: application/json
+
+{}
+
+###

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: #27374D;
+    --dark2: #526D82;
+    --mid: #9DB2BF;
+    --light: #DDE6ED;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+nav h1{
+    font-size: 3rem;
+    color: aqua;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    display: flex;
+    border: 1px solid var(--light);
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    align-items: center;
+    box-shadow: 1px 1px 15px 0px;
+    margin: 2rem;
+}
+
+.form input{
+    padding: 0.5rem;
+    margin: 0.5rem ;
+    font-size: 1rem;
+    background-color: var(--dark);
+    color: var(--light);
+    border: 0;
+    border-bottom: 1px solid var(--mid);
+    border-radius: 0.2rem;
+    transition: border 300ms;
+}
+.form input::placeholder{
+    color: rgb(174, 174, 174);
+}
+.form input:focus{
+    outline: 0;
+    border-color: white;
+}
+
+.form button{
+    height: 3rem;
+    width: 3rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+    background-color: var(--dark);
+    border: 1px solid var(--light);
+    border-radius: 2rem;
+    transition: transform 2s;
+}
+.form button:hover{
+    color: rgb(0, 255, 247);
+    transform: rotate(360deg);
+    border: 1px solid rgb(0, 255, 247);
+}
+
+table{
+    margin: 2rem;
+    border: 1px solid var(--mid);
+    border-collapse: collapse;
+}
+th{
+    font-size: 1.5rem;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 0.5rem;
+    color: aqua;
+}
+td{
+    border-bottom: 1px solid black;
+    padding: 0.5rem;
+}
+td{
+    align-items: center;
+    text-align: center;
+}
+.xbtn{
+    background-color: var(--dark);
+    border: 0;
+    color: red;
+    font-size: 2rem;
+}
+
